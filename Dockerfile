@@ -10,7 +10,7 @@ RUN --mount=type=bind,source=requirements.txt,target=/tmp/requirements.txt \
     pip install --no-cache-dir --requirement /tmp/requirements.txt
 
 # Expose the Prometheus port
-EXPOSE 8000
+EXPOSE 3081
 
 # Command to run the script
 CMD ["python", "metrics.py"]
