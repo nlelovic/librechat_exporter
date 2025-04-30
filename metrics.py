@@ -341,7 +341,7 @@ if __name__ == "__main__":
     # Get MongoDB URI and Prometheus port from environment variables
     mongodb_uri = os.getenv("MONGODB_URI", "mongodb://mongodb:27017/")
 
-    port = 8000
+    port = 3081
 
     # Start the Prometheus exporter
     collector = LibreChatMetricsCollector(mongodb_uri)
